@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tradingbot-v1"
+version = "1.0.0"
+description = "Trade Command Centre — TradingBot V1 MT5 desktop console"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "MetaTrader5>=5.0.45",
+  "numpy>=1.24.0",
+  "PySide6>=6.6.0",
+]
+
+[project.scripts]
+tradingbot-v1 = "trade_command_centre:run"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["desktop*"]
