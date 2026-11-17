@@ -1,0 +1,16 @@
+Welcome to TradingBot V1 — Trade Command Centre
+
+This setup wizard will install:
+
+  • Trade Command Centre desktop application
+  • Ollama (optional) — local AI for trade analysis
+  • AI models (optional) — llama3:latest by default
+  • MetaTrader 5 (optional) — connect to your broker
+
+After installation:
+  1. Open MetaTrader 5 and log in to your broker account
+  2. Enable "Algo Trading" on the MT5 toolbar
+  3. Launch Trade Command Centre from the Start menu
+  4. Click Connect MT5, then Start
+
+Internet connection is required to download Ollama, AI models, and MT5.

@@ -1,0 +1,143 @@
+/* Neural Trade Command — desktop theme */
+
+QMainWindow, QWidget {
+    background-color: #030712;
+    color: #e2e8f0;
+    font-family: "Segoe UI", "Rajdhani", sans-serif;
+    font-size: 13px;
+}
+
+QGroupBox {
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 14px;
+    background-color: rgba(10, 18, 40, 0.75);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    color: #a855f7;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+QLabel#TitleLabel {
+    color: #00f0ff;
+    letter-spacing: 2px;
+}
+
+QLabel#StatusPill {
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    border-radius: 12px;
+    padding: 6px 14px;
+    min-width: 110px;
+    background: rgba(0, 0, 0, 0.35);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+QLabel#StatusPill[state="ok"] {
+    color: #00ff9d;
+    border-color: #00ff9d;
+}
+
+QLabel#StatusPill[state="warn"] {
+    color: #fbbf24;
+    border-color: #fbbf24;
+}
+
+QLabel#StatusPill[state="bad"] {
+    color: #ff3b5c;
+    border-color: #ff3b5c;
+}
+
+QLabel#StatusPill[state="active"] {
+    color: #00f0ff;
+    border-color: #00f0ff;
+}
+
+QTabWidget::pane {
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(10, 18, 40, 0.5);
+}
+
+QTabBar::tab {
+    background: transparent;
+    color: #64748b;
+    padding: 10px 18px;
+    margin-right: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+
+QTabBar::tab:selected {
+    color: #00f0ff;
+    background: rgba(0, 240, 255, 0.12);
+}
+
+QLineEdit, QSpinBox, QDoubleSpinBox, QTextEdit#LogView {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    border-radius: 8px;
+    padding: 8px;
+    color: #e2e8f0;
+    selection-background-color: #0891b2;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #00f0ff;
+}
+
+QPushButton#PrimaryButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #00f0ff, stop:1 #0891b2);
+    color: #020617;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+
+QPushButton#DangerButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ff3b5c, stop:1 #9f1239);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    opacity: 0.9;
+}
+
+QCheckBox {
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #00f0ff;
+    background: #0f172a;
+}
+
+QCheckBox::indicator:checked {
+    background: #00f0ff;
+}
+
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+QTextEdit#LogView {
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    color: #94a3b8;
+}
